@@ -1,5 +1,5 @@
 class grub {
-  case $operatingsystem {
+  case $::operatingsystem {
     debian,ubuntu: { include grub::debian }
     default: { include grub::base }
   }
